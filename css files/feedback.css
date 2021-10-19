@@ -120,13 +120,14 @@ a:hover{
   .form1 {
     margin-left: 120px;
     width: 300px;
-    top: 57%;
+    top: 62%;
   }
   .heading h1 {
+    top: 165px;
+    font-size: 40px;
     left: 60px;
   }
   .picture img {
-    height: max-content;
-    width: max-content;
+    visibility: none;
   }
 }
