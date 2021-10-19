@@ -1,0 +1,62 @@
+.recipesheader {
+  font-family: "Herr Von Muellerhoff", cursive;
+  text-align: center;
+  font-size: 60px;
+  color: black;
+}
+.recipeinfo {
+  color: black;
+  text-align: center;
+  width: 70%;
+  word-wrap: break-word;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+
+  margin-top: 10px;
+}
+
+table {
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+figcaption {
+  font-size: 20px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 1%;
+}
+
+.heading {
+  background-color: bisque;
+}
+.description {
+  background: #e4a9f3;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  font-size: medium;
+}
+a:hover {
+  color: red;
+}
+
+.hover01_column figure img {
+  border-radius: 10%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+.hover01_column figure:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}

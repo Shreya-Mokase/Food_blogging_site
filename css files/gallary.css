@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+/*------------------------------------*\
+    photo-gallary sec6
+\*------------------------------------*/
+.photo-gallary {
+  padding: 0px 0 10px 0;
+}
+.photo-gallary-header {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 100px;
+  font-weight: normal;
+  margin: 0 0 -55px;
+  margin-bottom: 65px;
+  color: #a96700;
+}
+.photo-gallary-mosaic-image-conatainer {
+  background: whitesmoke;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(9vw + 9vh), 1fr));
+  grid-auto-rows: 150px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+}
+.photo-gallary-mosaic-child {
+  overflow: hidden;
+}
+.photo-gallary-mosaic-child img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  -o-object-position: center;
+  object-position: center;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; /* Animation */
+}
+.photo-gallary-mosaic-child:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.photo-gallary-mosaic-child:nth-child(1) {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.photo-gallary-mosaic-child:nth-child(5) {
+  grid-column-start: span 2;
+}
+.photo-gallary-mosaic-child:nth-child(4) {
+  grid-row-start: span 2;
+}
+.photo-gallary-mosaic-child:nth-child(7) {
+  grid-column-start: span 2;
+}
+.photo-gallary-mosaic-child:nth-child(8) {
+  grid-column-start: span 2;
+}
+.photo-gallary-mosaic-image-conatainer {
+  margin-bottom: 50px;
+}
+.photo-gallary a {
+  padding: 15px 25px;
+}
+
+@media screen and (max-width: 370px) {
+  .photo-gallary {
+    padding: 50px 0;
+  }
+  .photo-gallary-header {
+    margin-bottom: 50px;
+  }
+
+  .photo-gallary-mosaic-image-conatainer {
+    margin-bottom: 25px;
+  }
+  .photo-gallary a {
+    padding: 15px 25px;
+  }
+}
+
+a:hover{
+  text-decoration: none;
+  color: red;
+}

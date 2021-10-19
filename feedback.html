@@ -1,0 +1,343 @@
+<html>
+
+  <head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+
+    <link rel="stylesheet" href="css files/feedback.css">
+
+  </head>
+
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallary.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a>
+        </li>
+        <li><a href="recepies .html">Recipes</a></li>
+        <li><a href="review.html">Reviews<span class="underline"></span></a></li>
+
+        <li><a href="feedback.html">Feedback<span class="underline"></span></a></li>
+        <li><a href="tel:+91-9021175360" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-earphone"></span> Contact Us
+          </a></li>
+
+
+      </ul>
+    </nav>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      body {
+        min-height: 100vh;
+        font-family: 'Helvetica Neue', sans-serif;
+      }
+
+      nav {
+        text-align: center;
+        background-color: #000;
+      }
+
+      .menu {
+        display: inline-block;
+      }
+
+      .menu>li {
+        float: left;
+        color: black;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+        font-size: 17px;
+        padding-top: 5px;
+      }
+
+      .sub-menu {
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+
+      .sub-menu li {
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 8px 0;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        /*display: none;*/
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+      .sub-menu li:last-child {
+        border-bottom: 0;
+      }
+
+
+      .sub-menu li:hover {
+        background: black;
+      }
+
+
+      .menu>li:hover .sub-menu li {
+        display: block;
+        text-decoration: solid;
+        transform: scale(1);
+      }
+
+
+      .menu>li:hover .sub-menu {
+        text-decoration: solid;
+        transform: scale(1);
+      }
+
+    </style>
+    <div class="container-fluid">
+      <div class="feedback">
+
+        <div class="picture">
+          <img src="images/spices.jpg"></img>
+        </div>
+        <div class="heading">
+          <h1>Drop your feedback here!</h1>
+        </div>
+        <div class="form1">
+          <h3>Feedback</h3>
+          <form action="feedback.html">
+            <div class="user-box">
+              <input type="text" name="" required="" autocomplete="off">
+              <label>Name</label>
+            </div>
+            <div class="user-box">
+              <input type="email" name="" required autocomplete="off">
+              <label>E-mail</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="" required autocomplete="off">
+              <label>Message</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+    <footer>
+      <div class="footer">
+        <div class="row1">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row1">
+          <ul>
+            Contact Us for Invites ,Collaboration and Promotions.
+          </ul>
+        </div>
+
+        <div class="row1">
+          Copyright © 2021 - All rights reserved || Designed By: Gpp Students
+        </div>
+      </div>
+    </footer>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      .footer {
+        background: #000;
+        padding: 30px 0px;
+        font-family: 'Play', sans-serif;
+        text-align: center;
+      }
+
+      .footer .row1 {
+        width: 100%;
+        margin: 1% 0%;
+        padding: 0.6% 0%;
+        color: gray;
+        font-size: 13px;
+      }
+
+      .footer .row1 a {
+
+        text-decoration: none;
+        color: gray;
+        transition: 0.5s;
+      }
+
+      .footer .row1 a:hover {
+        color: #fff;
+      }
+
+      .footer .row1 ul {
+        width: 100%;
+      }
+
+      .footer .row1 ul li {
+        display: inline-block;
+        margin: 0px 30px;
+      }
+
+      .footer .row1 a i {
+        font-size: 2em;
+        margin: 0% 1%;
+      }
+
+      @media (max-width:720px) {
+        .footer {
+          text-align: left;
+          padding: 5%;
+        }
+
+        .footer .row1 ul li {
+          display: block;
+          margin: 10px 0px;
+          text-align: left;
+        }
+
+        .footer .row1 a i {
+          margin: 0% 3%;
+        }
+      }
+
+      .btn {
+        box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+        border-radius: 3px;
+        border: 1px solid;
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 8px;
+        position: relative;
+
+        font-size: 12px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      }
+
+      /*
+ * Counter button style
+ */
+      .btn-counter {
+        margin-right: 39px;
+      }
+
+      .btn-counter:after,
+      .btn-counter:hover:after {
+        text-shadow: none;
+      }
+
+      .btn-counter:after {
+        border-radius: 3px;
+        border: 1px solid #d3d3d3;
+        background-color: #eee;
+        padding: 0 8px;
+        color: #777;
+        content: attr(data-count);
+        left: 100%;
+        margin-left: 8px;
+        margin-right: -13px;
+        position: absolute;
+        top: -1px;
+      }
+
+      .btn-counter:before {
+        transform: rotate(45deg);
+        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+
+        background-color: #eee;
+        border: 1px solid #d3d3d3;
+        border-right: 0;
+        border-top: 0;
+        content: '';
+        position: absolute;
+        right: -13px;
+        top: 5px;
+        height: 6px;
+        width: 6px;
+        z-index: 1;
+        zoom: 1;
+      }
+
+      /*
+ * Custom styles
+ */
+      .btn {
+        background-color: #dbdbdb;
+        border-color: #bbb;
+        color: #666;
+      }
+
+      .btn:hover,
+      .btn.active {
+        text-shadow: 0 1px 0 #b12f27;
+        background-color: #f64136;
+        border-color: #b12f27;
+      }
+
+      .btn:active {
+        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+      }
+
+      .btn span {
+        color: #f64136;
+      }
+
+      .btn:hover,
+      .btn:hover span,
+      .btn.active,
+      .btn.active span {
+        color: #eeeeee;
+      }
+
+      .btn:active span {
+        color: #b12f27;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+      }
+
+    </style>
+  </body>
+
+</html>

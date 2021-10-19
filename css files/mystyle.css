@@ -1,0 +1,74 @@
+.recipesheader {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+.heading {
+  /* background-color: rgba(115,64,96,var(--tw-bg-opacity)); */
+  background-color: bisque;
+}
+.recipeinfo {
+  color: black;
+  text-align: center;
+  width: 70%;
+  word-wrap: break-word;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+
+  margin-top: 10px;
+}
+
+table {
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+figcaption {
+  font-size: 20px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 1%;
+}
+
+ul {
+  background: rgb(214, 161, 95);
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+ul li {
+  background: bisque;
+  padding: 5px;
+  margin-left: 35px;
+  font-size: 14px;
+}
+
+.description {
+  background: bisque;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+a:hover {
+  color: red;
+}
+
+.hover01 figure img {
+  border-radius: 10%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.hover01 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}

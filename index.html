@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>RASOI-THE FOOD BLOGGING SITE</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon"
+      href="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/rosa-favicon.png">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+    <!--Fonts-->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--Bootstrap-->
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--FontAwesome-->
+
+    <link rel="stylesheet" href="css files/style2.css">
+
+  </head>
+
+  <body class="stop-scroll">
+
+    <!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <!
+    <!--Start loader-->
+    <div class="loader-wrap">
+      <div class="loader">
+        <span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
+          class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
+          class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span
+          class="loader-item"></span>
+      </div>
+    </div>
+    <!--End loader-->
+
+    <!--Start Dots-->
+    <div class="dots">
+      <div class="active one" data-x="header"></div>
+      <div class="two" data-x=".recipes"></div>
+      <div class="three" data-x=".fixed-image"></div>
+    </div>
+    <!--End Dots-->
+
+    <!--Start Header-->
+    <header>
+
+      <nav>
+        <div class="logo">
+          Rasoi
+        </div>
+        <div class="toggle">
+          <span class="first"></span>
+          <span class="middle"></span>
+          <span class="last"></span>
+        </div>
+        <div class="navigation-bar">
+          <ul>
+            <li class="active"><a href="index.html">Home<span class="underline"></span></a></li>
+            <li><a href="gallary.html">Gallery<span class="underline"></span></a></li>
+            <li><a href="blog.html">Blog<span class="underline"></span></a>
+            </li>
+            <li class="Recipes">
+              <ul class="submenu">
+                <li><a href="recepies .html">Recipes<span class="underline"></span></a></li>
+                <li><a href="deserts.html">Desserts<span class="underline"></span></a></li>
+                <li><a href="drinks.html">Drinks<span class="underline"></span></a></li>
+              </ul>
+            </li>
+            <li><a href="review.html">Reviews<span class="underline"></span></a></li>
+
+            <li><a href="feedback.html">Feedback<span class="underline"></span></a></li>
+            <li>
+
+              <a href="tel:+91-9021175360" class="btn btn-info btn-lg">
+                <span class="glyphicon glyphicon-earphone"></span> Contact Us<span class="underline"></span>
+              </a>
+              <style>
+                .btn {
+                 
+                  border-radius: 3px;
+                  border: none;
+                  display: inline-block;
+                  height: 18px;
+                  line-height: 18px;
+                  padding: 0 8px;
+                  position: relative;
+
+                  font-size: 12px;
+                  text-decoration: none;
+                  
+                }
+
+                /*
+       
+                /*
+ * Custom styles
+ */
+                .btn {
+                  background-color: #ffffff00;
+                  border: none;
+                  
+                }
+
+                .btn:hover,
+                .btn.active {
+                  text-shadow: 0 1px 0 #b12f27;
+                  background-color: #f64036dc;
+                }
+
+                .btn:active {
+                  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+                }
+
+                .btn span {
+                  color: #f64036dc;
+                }
+
+                .btn:hover,
+                .btn:hover span,
+                .btn.active,
+                .btn.active span {
+                  color: #eeeeee;
+                }
+
+                .btn:active span {
+                  color: #b12f27;
+                  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+                }
+
+              </style>
+
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text">
+        <h2>Welcome</h2>
+        <h1>THE RASOI</h1>
+        <div class="arrow">
+          <span class="left"></span>
+          <i class="fas fa-asterisk"></i>
+          <span class="right"></span>
+        </div>
+
+      </div>
+      </div>
+      <svg class="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+        <path fill="currentColor"
+          d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
+        </path>
+      </svg>
+      <div class="arrow-down">
+      </div>
+    </header>
+    <!--End Header-->
+
+    <!--start About Us-->
+    <div class="about-us">
+      <div class="text">
+        <h2>Discover</h2>
+        <h3>Our Story</h3>
+        <div><i class="fas fa-asterisk"></i></div>
+        <p>"Rasoi" The Food Blogging Website Was Found For The Sake of Love For Maharashtrian Food And Delicasies and to
+          Introduce or Present Them To The World.
+
+        </p>
+        <div><a class="a-CTA" href="#footer">About Us</a></div>
+      </div>
+      <div class="image-container">
+        <div class="image image1">
+          <img src="images/web1.jpg" alt="Food Photo">
+        </div>
+        <div class="image image2">
+          <img src="images/web2.jpg" alt="Food Photo">
+        </div>
+      </div>
+    </div>
+    <!--End About Us-->
+
+    <!--start Recipes-->
+    <div class="recipes">
+      <div class="image"></div>
+      <div class="text">
+        <h2>Tasteful</h2>
+        <h3>Recipes</h3>
+      </div>
+    </div>
+    <!--End Recipes-->
+
+    <!--start Menu-->
+    <div class="menu">
+      <div class="box-model">
+        <i class="fas fa-times fa-2x close"></i>
+        <div class="arrow">
+          <div class="arrow arrow-right"></div>
+          <div class="arrow arrow-left"></div>
+        </div>
+        <div class="box-image-container">
+          <div class="box-image">
+            <img src="" alt="Food Photo">
+          </div>
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="image image1">
+          <img src="https://d2np4vr8r37sds.cloudfront.net/img/thumbnail/1338-kmecpgcnlc-1488704197.jpg"
+            alt="Food Photo">
+        </div>
+        <div class="image image2">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZyBepPku1fNiMF0AA5NtdgiSYCX_qoZJGew&usqp=CAU"
+            alt="Food Photo">
+        </div>
+        <!-- <div class="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpksbEon6w9Rb3RrEt7kpr4cPs2qDPzNSHZQ&usqp=CAU"
+            alt="Food Photo">
+        </div>
+        <div class="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQERIIIo2tusq8Ljv5VQ9eSh0qqkMejt5EqmA&usqp=CAU"
+            alt="Food Photo">
+        </div> -->
+      </div>
+      <div class="about-us">
+        <div class="text">
+          <h2>Discover</h2>
+          <h3> Our Blogs</h3>
+          <div><i class="fas fa-asterisk"></i></div>
+          <p>For those with pure food indulgence in mind, come next door and read our blogs which will make you hungry!
+            We love food, lots of different food, just like you.</p>
+          <div><a class="a-CTA" href="blog.html">Our Blogs</a></div>
+        </div>
+      </div>
+    </div>
+    <!--End Menu-->
+
+    <!--Start fixed-image-->
+    <div class="fixed-image">
+      <div class="text">
+        <h2>The Perfect</h2>
+        <h3>Blend</h3>
+      </div>
+    </div>
+    <!--End fixed-image-->
+
+    <!--start About Us-->
+    <div class="reservation">
+      <div class="text">
+        <h2>Culinary</h2>
+        <h3>Delight</h3>
+        <div><i class="fas fa-asterisk"></i></div>
+        <p>We promise an Exquisite recipes that offers something different to local and foreign
+          patrons and ensures you enjoy a memorable food experience every time.</p>
+        <div><a class="a-CTA" href="recepies .html">Read Some Recipess</a></div>
+      </div>
+      <div class="image-container">
+        <div class="image image1">
+          <img src="images/cd1.jpg" alt="Food Photo">
+        </div>
+        <div class="image image2">
+          <img src="images/cd2.jpg" alt="Food Photo">
+        </div>
+      </div>
+    </div>
+    <!--End About Us-->
+
+    <!--Start Footer-->
+    <footer>
+      <section id="footer">
+        <div class="text">
+          <h2>ABOUT Rasoi</h2>
+          <div><i class="fas fa-asterisk"></i></div>
+          <p>Rasoi is the food blogging site created especially for great Vegetarian culinaries of Maharashtrian.
+            Here We Provide Blogs ,recipes and reviews about the food.
+          </p>
+        </div>
+        <div class="contact-container">
+          <div class="social-media">
+            <h3>Follow Along</h3>
+            <div class="links">
+              <a href="www.wha"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+
+
+
+            </div>
+          </div>
+          <div class="newsletter">
+            <h3>NewsLetter</h3>
+            <form method="post">
+              <input type="email" name="email" placeholder="Type Your Email">
+              <i class="fas fa-envelope"></i>
+            </form>
+          </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <!--Start Copy-Right-->
+    <div class="copyright">
+      <svg class="svg-up" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+        <path fill="#262526"
+          d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
+        </path>
+      </svg>
+      <i class="fas fa-angle-double-up arrow-up"></i>
+      <ul class="info">
+        <li>&copy; RASOI- THE FOOD BLOGGING SITE</li>
+        <li>Tel:+91-9021175360</li>
+        <li>Handcrafted with love by <a href="#">Students Of GPP</a> College</li>
+      </ul>
+      <ul class="CTA">
+        <li><a href="#">PERMISSIONS AND COPYRIGHT</a></li>
+        <li><a href="#">CONTACT THE TEAM</a></li>
+      </ul>
+    </div>
+    <!--End Copy-Right-->
+
+    <!-- Add your site or application content here -->
+    <script>
+      // constants
+      const body = document.querySelector("body"),
+        loader = document.querySelector(".loader-wrap"),
+        links = document.querySelectorAll('a[href="#"]'),
+        nav = document.querySelector("header nav"),
+        navToggle = document.querySelector("header nav .toggle"),
+        navSpanMiddle = document.querySelector("header nav .toggle .middle"),
+        navNavigationBar = document.querySelector("header nav .navigation-bar"),
+        navNavigationBarLi = document.querySelectorAll(
+          "header nav .navigation-bar li"
+        ),
+        headerText = document.querySelector("header .text"),
+        headerSection = document.querySelector("header"),
+        aboutSection = document.querySelector(".about-us"),
+        recipeSection = document.querySelector(".recipes"),
+        menuSection = document.querySelector(".menu"),
+        fixedImageSection = document.querySelector(".fixed-image"),
+        footerSection = document.querySelector("footer"),
+        dotOne = document.querySelector(".dots .one"),
+        dotTwo = document.querySelector(".dots .two"),
+        dotThree = document.querySelector(".dots .three"),
+        dots = document.querySelectorAll(".dots > div"),
+        logoImage = document.querySelector("header nav .logo img"),
+        svgDown = document.querySelector("header .arrow-down"),
+        svgUp = document.querySelector(".copyright .arrow-up"),
+        menuImgs = document.querySelectorAll(".menu .menu-image-container img"),
+        boxModel = document.querySelector(".menu .box-model"),
+        menuImageContainer = document.querySelector(".menu-image-container"),
+        boxModelArrow = document.querySelector(".menu .box-model .arrow"),
+        boxModelImage = document.querySelector(".menu .box-model img"),
+        pageTitle = document.querySelector("title");
+
+      // remove loader
+      function fadeOutEffect() {
+        const fadeEffect = setInterval(function () {
+          if (!loader.style.opacity) {
+            loader.style.opacity = 1;
+          }
+          if (loader.style.opacity > 0) {
+            loader.style.opacity -= 0.4;
+          } else {
+            body.classList.remove('stop-scroll');
+            loader.classList.add('remove');
+            clearInterval(fadeEffect);
+          }
+        }, 100);
+      }
+      window.addEventListener("load", fadeOutEffect);
+
+      // prevent links click hash
+      links.forEach(link =>
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+        })
+      );
+
+      // toggle hamburger menu button
+      navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
+        navSpanMiddle.classList.toggle("hide");
+        navNavigationBar.classList.toggle("show");
+      });
+
+      // show active navigationbar li
+      navNavigationBarLi.forEach(li =>
+        li.addEventListener("click", () => {
+          const arr = Array.from(li.parentElement.children);
+          arr.forEach(li => li.classList.remove("active"));
+          li.classList.add("active");
+        })
+      );
+
+      // svg-up smooth scroll
+      svgUp.addEventListener("click", () => {
+        window.scroll({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      window.onscroll = function () {
+        // make navbar fixed & change logo color
+        if (window.pageYOffset > headerSection.offsetHeight - 75) {
+          nav.classList.add("active");
+          logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988525/logo-rosa.png";
+        } else {
+          nav.classList.remove("active");
+          logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png";
+        }
+
+        // header welcome fade out and in
+        if (window.pageYOffset > 0) {
+          headerText.style.opacity = -window.pageYOffset / 300 + 1;
+        }
+        // home page JS
+        if (pageTitle.text === "RASOI- THE FOOD BLOGGING SITE") {
+          //change dots background color
+          if (window.pageYOffset < headerSection.offsetHeight * 0.5) {
+            dots.forEach(dot => dot.classList.remove("black"));
+            dotTwo.classList.remove("active");
+            dotOne.classList.add("active");
+          } else if (
+            window.pageYOffset > headerSection.offsetHeight * 0.5 &&
+            window.pageYOffset < recipeSection.offsetTop * 0.72
+          ) {
+            dots.forEach(dot => dot.classList.add("black"));
+          } else if (
+            window.pageYOffset > recipeSection.offsetTop * 0.75 &&
+            window.pageYOffset < menuSection.offsetTop * 0.81
+          ) {
+            dots.forEach(dot => dot.classList.remove("black"));
+            dotOne.classList.remove("active");
+            dotThree.classList.remove("active");
+            dotTwo.classList.add("active");
+          } else if (
+            window.pageYOffset > menuSection.offsetTop * 0.81 &&
+            window.pageYOffset < fixedImageSection.offsetTop * 0.86
+          ) {
+            dots.forEach(dot => dot.classList.add("black"));
+            dotThree.classList.remove("active");
+            dotTwo.classList.add("active");
+          } else if (
+            window.pageYOffset > fixedImageSection.offsetTop * 0.86 &&
+            window.pageYOffset < footerSection.offsetTop * 0.72
+          ) {
+            dots.forEach(dot => dot.classList.remove("black"));
+            dotTwo.classList.remove("active");
+            dotThree.classList.add("active");
+          } else if (
+            window.pageYOffset > footerSection.offsetTop * 0.72 &&
+            window.pageYOffset < footerSection.offsetTop * 0.901
+          ) {
+            dots.forEach(dot => dot.classList.add("black"));
+          } else if (window.pageYOffset > footerSection.offsetTop * 0.901) {
+            dots.forEach(dot => dot.classList.remove("black"));
+          }
+        }
+      };
+
+      // home page JS
+      if (pageTitle.text === "RASOI- THE FOOD BLOGGING WEBSITE") {
+        // svg-down smooth scroll
+        svgDown.addEventListener("click", () => {
+          window.scroll({
+            top: aboutSection.offsetTop - 30,
+            behavior: "smooth"
+          });
+        });
+
+        // dots smooth scroll
+        dots.forEach(dot =>
+          dot.addEventListener("click", function () {
+            window.scrollTo({
+              top: document.querySelector(this.dataset.x).offsetTop - 100,
+              behavior: "smooth"
+            });
+          })
+        );
+
+        // show box model
+        menuImgs.forEach(img =>
+          img.addEventListener("click", function () {
+            const arr = Array.from(this.parentElement.parentElement.children);
+
+            arr.forEach(div => div.classList.remove("active"));
+
+            this.parentElement.classList.add("active");
+            boxModel.classList.add("active");
+            boxModelImage.src = this.src;
+            boxModelImage.classList.add("active");
+            body.classList.add("hide-scroll");
+          })
+        );
+
+        // box model functions
+        function boxModelFun(e) {
+          // close box model
+          if (
+            e.code === "Escape" ||
+            (e.target.tagName === "DIV" && !e.target.classList.contains("arrow")) ||
+            e.target.classList.contains("close")
+          ) {
+            boxModel.classList.remove("active");
+            body.classList.remove("hide-scroll");
+          }
+
+          if (boxModel.classList.contains("active")) {
+            if (
+              e.code === "ArrowRight" ||
+              e.code === "ArrowLeft" ||
+              e.target.classList.contains("arrow-right") ||
+              e.target.classList.contains("arrow-left")
+            ) {
+              const arr = Array.from(menuImageContainer.children);
+              const active = arr.find(div => div.classList.contains("active"));
+
+              // change box model image
+              if (
+                e.target.classList.contains("arrow-right") ||
+                e.code === "ArrowRight"
+              ) {
+                if (active.nextElementSibling === null) {
+                  active.parentElement.firstElementChild.classList.add("active");
+                  boxModelImage.src =
+                    active.parentElement.firstElementChild.firstElementChild.src;
+                } else {
+                  active.nextElementSibling.classList.add("active");
+                  boxModelImage.src = active.nextElementSibling.firstElementChild.src;
+                }
+              }
+
+              // change box model image
+              else if (
+                e.target.classList.contains("arrow-left") ||
+                e.code === "ArrowLeft"
+              ) {
+                if (active.previousElementSibling === null) {
+                  active.parentElement.lastElementChild.classList.add("active");
+                  boxModelImage.src =
+                    active.parentElement.lastElementChild.lastElementChild.src;
+                } else {
+                  active.previousElementSibling.classList.add("active");
+                  boxModelImage.src =
+                    active.previousElementSibling.firstElementChild.src;
+                }
+              }
+              active.classList.remove("active");
+            }
+          }
+        }
+
+        window.addEventListener("keydown", boxModelFun);
+        window.addEventListener("click", boxModelFun);
+        boxModelArrow.addEventListener("click", boxModelFun);
+      }
+      //NAVIGATION
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+  </body>
+
+</html>

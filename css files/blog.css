@@ -1,0 +1,175 @@
+.heading1 {
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.842);
+  vertical-align: middle;
+}
+
+#i1 {
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 6s infinite;
+  animation-delay: 1s;
+  border-right: 3px solid white;
+}
+a:hover{
+  text-decoration: none;
+  color: red;
+}
+@keyframes text {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 10ch;
+  }
+}
+.blog {
+  padding-left: 220px;
+  padding-right: 40px;
+}
+.picture1 img,
+.picture2 img {
+  height: 360px;
+  width: 350px;
+}
+.picture1 img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.picture2 img {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.picture1 img:hover,
+.picture2 img:hover {
+  transform: scale(1.04);
+  transition: 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 1px rgba(255, 0, 0, 0.651);
+}
+
+#i2 {
+  padding-top: 96px;
+  font-size: 17px;
+}
+@media (hover: hover) {
+  #i4:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 4px solid black;
+  }
+  #i5:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 4px solid black;
+  }
+}
+#a1,
+#a2,
+#a3,
+#a4,
+#a5,
+#a6,
+#a7,
+#a8,
+#a9,
+#a10,
+#a11,
+#a12,
+#a13,
+#a14,
+#a15 {
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+#a1 {
+  animation-delay: 0.7s;
+}
+#a2 {
+  animation-delay: 1.5s;
+}
+#a3 {
+  animation-delay: 3s;
+}
+#a4 {
+  animation-delay: 4.5s;
+}
+#a5 {
+  animation-delay: 6s;
+}
+#a6 {
+  animation-delay: 7.5s;
+}
+#a7 {
+  animation-delay: 9s;
+}
+#a8 {
+  animation-delay: 10.5s;
+}
+#a9 {
+  animation-delay: 12s;
+}
+#a10 {
+  animation-delay: 13.5s;
+}
+#a11 {
+  animation-delay: 15s;
+}
+#a12 {
+  animation-delay: 16.5s;
+}
+#a13 {
+  animation-delay: 18s;
+}
+#a14 {
+  animation-delay: 19.5s;
+}
+#a15 {
+  animation-delay: 21s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+#i6 {
+  margin-left: 37px;
+}
+@media (max-width: 450px) {
+  .blog {
+    padding-left: 18px;
+  }
+  .picture1 img {
+    border-radius: 15px;
+  }
+  .picture2 img {
+    border-radius: 15px;
+  }
+  #i6 {
+    margin-left: 3px;
+  }
+  #i2 {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  #i4 {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,727 @@
+<html>
+
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css files/blog.css">
+
+    </head>
+
+    <body>
+        <nav>
+            <ul class="menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="gallary.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a>
+                </li>
+                <li>Recipes
+                    <ul class="sub-menu">
+                        <li><a href="recepies .html">Local Recipes</a></li>
+                        <li><a href="dessert.html">Desserts</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                    </ul>
+                </li>
+                <li><a href="review.html">Reviews<span class="underline"></span></a></li>
+
+                <li><a href="feedback.html">Feedback<span class="underline"></span></a></li>
+                <li><a href="tel:+91-9021175360" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-earphone"></span> Contact Us
+                    </a></li>
+
+
+            </ul>
+        </nav>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                box-sizing: border-box;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            body {
+                min-height: 100vh;
+                font-family: 'Helvetica Neue', sans-serif;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .menu {
+                display: inline-block;
+            }
+
+            .menu>li {
+                float: left;
+                color: #fff;
+                width: 140px;
+                height: 40px;
+                line-height: 40px;
+                background: rgba(0, 0, 0, 0.8);
+                cursor: pointer;
+                font-size: 17px;
+            }
+
+            .sub-menu {
+                transform: scale(0);
+                transform-origin: top center;
+                transition: all 300ms ease-in-out;
+            }
+
+
+            .sub-menu li {
+                font-size: 14px;
+                background: rgba(0, 0, 0, 0.8);
+                padding: 8px 0;
+                color: white;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                /*display: none;*/
+                transform: scale(0);
+                transform-origin: top center;
+                transition: all 300ms ease-in-out;
+            }
+
+            .sub-menu li:last-child {
+                border-bottom: 0;
+            }
+
+
+            .sub-menu li:hover {
+                background: black;
+            }
+
+
+            .menu>li:hover .sub-menu li {
+                display: block;
+                text-decoration: solid;
+                transform: scale(1);
+            }
+
+
+            .menu>li:hover .sub-menu {
+                text-decoration: solid;
+                transform: scale(1);
+            }
+
+            .btn {
+                box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+                border-radius: 3px;
+                border: 1px solid;
+                display: inline-block;
+                height: 18px;
+                line-height: 18px;
+                padding: 0 8px;
+                position: relative;
+
+                font-size: 12px;
+                text-decoration: none;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            }
+
+            /*
+ * Counter button style
+ */
+            .btn-counter {
+                margin-right: 39px;
+            }
+
+            .btn-counter:after,
+            .btn-counter:hover:after {
+                text-shadow: none;
+            }
+
+            .btn-counter:after {
+                border-radius: 3px;
+                border: 1px solid #d3d3d3;
+                background-color: #eee;
+                padding: 0 8px;
+                color: #777;
+                content: attr(data-count);
+                left: 100%;
+                margin-left: 8px;
+                margin-right: -13px;
+                position: absolute;
+                top: -1px;
+            }
+
+            .btn-counter:before {
+                transform: rotate(45deg);
+                filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+
+                background-color: #eee;
+                border: 1px solid #d3d3d3;
+                border-right: 0;
+                border-top: 0;
+                content: '';
+                position: absolute;
+                right: -13px;
+                top: 5px;
+                height: 6px;
+                width: 6px;
+                z-index: 1;
+                zoom: 1;
+            }
+
+            /*
+ * Custom styles
+ */
+            .btn {
+                background-color: #dbdbdb;
+                border-color: #bbb;
+                color: #666;
+            }
+
+            .btn:hover,
+            .btn.active {
+                text-shadow: 0 1px 0 #b12f27;
+                background-color: #f64136;
+                border-color: #b12f27;
+            }
+
+            .btn:active {
+                box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+            }
+
+            .btn span {
+                color: #f64136;
+            }
+
+            .btn:hover,
+            .btn:hover span,
+            .btn.active,
+            .btn.active span {
+                color: #eeeeee;
+            }
+
+            .btn:active span {
+                color: #b12f27;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+            }
+
+        </style>
+        <div class="container-fluid">
+            <br><br>
+            <div class="heading1">
+                <center>
+                    <h2 id="i1"><br>Food Blogs<br><br></h2>
+                </center>
+            </div>
+            <div class="blog">
+                <br><br>
+                <div class="row" id="a1">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/thalipeeth.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+
+                                <b>Thalipeeth</b> is a savoury multi-grain flatbread popular in Western India,
+                                particularly Maharashtra.
+                                The flour for thalipeeth, called bhajanee, is prepared from roasted grains, legumes and
+                                spices.
+                                The ingredients include grains such as rice, wheat, bajra, and jowar, legumes such as
+                                chana, and urad
+                                and spices, most commonly coriander and cumin seeds.When preparing the dough, other
+                                ingredients such as onion,
+                                fresh coriander, other vegetables and spices are added. Thalipeeth is usually served
+                                with butter, ghee,
+                                or yogurt. The dish is popular in Maharashtra.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row" id="a2">
+                    <div class="col-sm-6" id="i5">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b>Pav Bhaji -</b> Amchi Maharashtra food is incomplete without this dish which has come
+                                to be
+                                synonymous to the state! Fresh and thick slices of bread, smothered in butter served
+                                with a
+                                delicious mix of moderately spiced vegetables. This lip-smacking dish has won the heart
+                                of every Indian!
+                                Pav bhaji is a spiced mixture of mashed vegetables in a thick gravy served with bread.
+                                Vegetables in
+                                the curry may commonly include potatoes, onions, carrots, chillies, peas, bell peppers
+                                and tomatoes.
+                                Street sellers usually cook the curry on a flat griddle (tava) and serve the dish hot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="picture2" id="i6">
+                            <img src="images/pavbhaji.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br><br>
+                <div class="row" id="a3">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/puranpoli.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b>Puran Poli -</b> This delectable food item is a sweet version of the loving parantha.
+                                The stuffing is made from jaggery (gur), yellow gram (chana) dal, plain flour, cardamom
+                                powder and ghee (clarified butter). It is a popular dish in festive occasions and also
+                                can
+                                be eaten at any time of the day. A tasty dessert does not need anyone's permission to be
+                                eaten!
+                                Puran poli or pooran poli is a traditional Maharashtrian sweet made using whole wheat
+                                flour dough
+                                stuffed with a sweet lentil filling. Serve it with a dollop of ghee and milk on the side
+                                for a delicious
+                                breakfast, snack, or dessert.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row" id="a4">
+                    <div class="col-sm-6" id="i5">
+                        <div class="info">
+                            <p align="justify" id="i2">
+
+                                <b>Ukadiche Modak </b>is one of the most famous sweet found in Maharashtra and is
+                                extensively eaten during
+                                the Ganesh Chaturthi Festival all around the state. The sweet filling on the inner part
+                                of a modak consists of
+                                freshly grated coconut and jaggery while the outer shell is made out of rice flour and
+                                is very soft. With time,
+                                there have been varied types of modak such as Kesari modak, dark chocolate modak,
+                                motichoor modak, paneer modak,
+                                dry fruit modak and many more. This sweet is Ganpati's favourite and that is for a very
+                                definite reason for sure.
+                                Ukadiche Modak is a steamed (sweet) dumpling where ukadiche means "steamed" or "that is
+                                steamed" and modak is the
+                                name for dumpling of this patented shape.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="picture2" id="i6">
+                            <img src="images/modak.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="row" id="a5">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/bharlivangi.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b>Bharli Vangi -</b> This is a popular style of cooking brinjals or baby brinjals
+                                stuffed with coconut,
+                                onion, jaggery, Marathi goda masala. Brinjal has never been anybody's favourite
+                                vegetable per se.
+                                But this Maharashtra food dish has the capability to kick in life into this otherwise
+                                boring vegetable.
+                                This combination of ingredients does wonders to the brinjal.Bharli vangi is a
+                                Maharashtrian-style stuffed
+                                brinjal recipe where small brinjals are stuffed with a spicy peanut masala and then
+                                simmered in a spicy
+                                onion tomato gravy. This curry is made in almost all Marathi households. Apart from
+                                everyday meals,
+                                you will also find bharli vangi in the festive or wedding menus.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row" id="a6">
+                    <div class="col-sm-6" id="i5">
+                        <div class="info">
+                            <p align="justify" id="i2">
+
+                                <b>Shrikhand</b> is a sort of sweet yoghurt dish, flavoured with cardamom powder and
+                                saffron,
+                                this dish is a hit at weddings and at the festival of Dushera. It is usually served with
+                                piping,
+                                hot puris and is another Maharashtra food dish that is famous all over the
+                                country.shrikhand
+                                is one of the easiest and tastiest desserts around. Traditional shrikhand is made using
+                                hung curd
+                                (also known as 'Chakka' in Marathi language), a homemade yogurt that is drained of any
+                                whey.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="picture2" id="i6">
+                            <img src="images/Shrikhand.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="row" id="a7">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/misalpav.jpeg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b>Misal Pav</b> is quintessentially from Pune and is one of the most popular
+                                Maharashtrian
+                                breakfast, snack or even brunch. It is a street food popularly found in Mumbai. It has a
+                                spicy and tangy
+                                lentil curry which is made with moth beans and is served with Pav bread. At times, it is
+                                eaten with yoghurt
+                                to lessen the spice. Although it is a breakfast food but Maharashtrians enjoy it at time
+                                of the day.
+                                There are various types of Misal such as Puneri Missal (topped with poha), Nagpuri
+                                Missal, Kolhapuri Missal
+                                and Mumbai Missal which are very spicy.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row" id="a8">
+                    <div class="col-sm-6" id="i5">
+                        <div class="info">
+                            <p align="justify" id="i2">
+
+                                <b>Poha -</b>This chai-time snack which is made out of flattened rice is a favourite
+                                among every Maharashtrian.
+                                A very versatile dish, poha can be prepared in numerous ways. The most common variant is
+                                kanda poha which
+                                is made with onions. Other variants include batata poha, poha prepared with diced
+                                potato, dadpe pohe which
+                                is raw poha prepared with fresh, shredded coconut, green chillies, ginger and lime juice
+                                and lastly kachche
+                                pohe, raw poha tossed in a mix of oil, red chilli powder, salt and un-sautéed onion. No
+                                matter which way you
+                                choose to make it, poha will leave you craving for more!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="picture2" id="i6">
+                            <img src="images/poha.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br><br>
+                <div class="row" id="a9">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/sabudana.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b>Sabudana</b> is 'sago' or tapioca starch.Khichdi roughly means 'mixture'. This unique
+                                dish
+                                is a popular breakfast item in Maharashtra food and cuisine and is one of the few food
+                                products which
+                                is consumed during the period of holy-fasting, 'upwaas'. The granular texture of sago
+                                prepared in a
+                                savoury mix turns out to be a delicious dish indeed.Sabudana khichdi is a popular Hindu
+                                fasting food
+                                where soaked tapioca pearls are tempered with curry leaves, whole spices, potatoes and
+                                roasted peanuts.
+                                It is a popular dish from the Maharashtra. Sabudana khichdi is most commonly eaten
+                                during Navratri,
+                                Ekadashi and other Hindu fasting days.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row" id="a10">
+                    <div class="col-sm-6" id="i5">
+                        <div class="info">
+                            <p align="justify" id="i2">
+
+                                <b>Sol Kadhi</b> is a very popular Maharashtra Food dish prepared with kokam in coconut
+                                milk.
+                                This dish is common across Maharashtra, Konkan and Goan regions. Coconut milk spiced
+                                with green chillies,
+                                kokum and fresh coriander, this dish screams freshness. A pleasant pink coloured drink,
+                                sol kadhi is served
+                                as an appetizer and is hailed for its digestive qualities!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="picture2" id="i6">
+                            <img src="images/solkadhi.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br><br>
+                <div class="row" id="a11">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/pithlabakhri.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b>Pithla Bhakri</b> is the recurrent 'comfort food' for most of the Maharashtrians.
+                                In fact, it is also known as the Farmer's meal in the state. Mostly, the hot pithra is
+                                united
+                                with bhakri and even roti at times as a reward after a long and tiring day at work. This
+                                simple
+                                dish doesn't require either too many complex ingredients or a lot of time to prepare.
+                                Instead,
+                                its the best dish to come up with when you are out of veggies. Mostly, pithla which is
+                                served with
+                                rice has a watery-liquid like consistency and a semi-liquid or dry pithla goes perfectly
+                                with bhakri
+                                or roti. A spicy version of the same is known as Zunka.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row" id="a12">
+                    <div class="col-sm-6" id="i5">
+                        <div class="info">
+                            <p align="justify" id="i2">
+
+                                <b>Basundi</b> is a sweet dish made in Maharashtra. It is condensed by boiling the
+                                sweetened
+                                milk on low heat until it becomes half of its initial volume. Sugar, cardamom or saffron
+                                is added
+                                to augment the flavour and texture. Different types of basundi are also created such as
+                                custard apple
+                                basundi and angoor basundi (having small-sized rasgullas in basundi).Basundi is a
+                                popular Indian dessert
+                                consisting of sweetened, thickened milk with the addition of chopped nuts such as
+                                almonds, cashews,
+                                and pistachios. The dessert is usually flavored with cardamom and saffron.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="picture2" id="i6">
+                            <img src="images/basundi.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="row" id="a13">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/kairipanna.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b>Kairi Cha Panha</b> is a traditional Maharashtrian raw mango drink and is enormously
+                                famous during the summer season, used as a refreshment drink. Mostly the mangoes chosen
+                                are Alphonso
+                                and Salem Gundu. This drink takes hardly 7 to 8 minutes to be prepared and it works
+                                tremendously
+                                advantageous in relaxing someone when served chilled. In order to improvise the drink,
+                                the cardamom
+                                is ground along with its peel to give a better flavour.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row" id="a14">
+                    <div class="col-sm-6" id="i5">
+                        <div class="info">
+                            <p align="justify" id="i2">
+
+                                <b>Aam ras -</b> Summer season is all about mangoes and aamrus is one of the favourite
+                                mango servings
+                                in Maharashtra. The aamras is made from the mango pulp and is thick in texture. The pulp
+                                is extracted
+                                by hand and it takes not more than 30 minutes to prepare. It is served with puris or
+                                chapattis.
+                                At times, ghee or milk is added to aamrus to enhance its flavour.Aamras (also known as
+                                amras) is a
+                                sweet dish featuring in the cuisine of the Indian subcontinent and made from the pulp of
+                                the mango fruit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="picture2" id="i6">
+                            <img src="images/Aamras.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="row" id="a15">
+                    <div class="col-sm-4">
+                        <div class="picture1">
+                            <img src="images/kadhi.jpg"></img>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="i4">
+                        <div class="info">
+                            <p align="justify" id="i2">
+                                <b> Kadhi </b> is an important constituent of Maharashtrian meal. It consists of thick
+                                gravy based on chickpea flour and contains vegetable fritters known as pakoras. The
+                                yoghurt or Dahi
+                                added to it gives it a sour taste but mostly in Maharashtra, sugar is added which makes
+                                it taste sweet
+                                as well. It is a perfect dish during the summer season as it can be enjoyed the most
+                                with steamed rice,
+                                or even moong dal khichdi to bring a change.Kadhi is a famous Indian dish made by
+                                blending beaten curd or
+                                buttermilk and gram flour (besan) and tempering it with flavorful spices. This humble
+                                dish can be made
+                                in many ways and every Indian state and household has its own version.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+        <!--FONT AWESOME-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+
+
+        <footer>
+            <div class="footer">
+                <div class="row1">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+
+                <div class="row1">
+                    <ul>
+                        Contact Us for Invites ,Collaboration and Promotions.
+                    </ul>
+                </div>
+
+                <div class="row1">
+                    Copyright © 2021 - All rights reserved || Designed By: Gpp Students
+                </div>
+            </div>
+        </footer>
+        <style>
+            body {
+                margin: 0;
+                overflow-x: hidden;
+            }
+
+            .footer {
+                background: #000;
+                padding: 30px 0px;
+                font-family: 'Play', sans-serif;
+                text-align: center;
+            }
+
+            .footer .row1 {
+                width: 100%;
+                margin: 1% 0%;
+                padding: 0.6% 0%;
+                color: gray;
+                font-size: 13px;
+            }
+
+            .footer .row1 a {
+
+                text-decoration: none;
+                color: gray;
+                transition: 0.5s;
+            }
+
+            .footer .row1 a:hover {
+                color: #fff;
+            }
+
+            .footer .row1 ul {
+                width: 100%;
+            }
+
+            .footer .row1 ul li {
+                display: inline-block;
+                margin: 0px 30px;
+            }
+
+            .footer .row1 a i {
+                font-size: 2em;
+                margin: 0% 1%;
+            }
+
+            @media (max-width:720px) {
+                .footer {
+                    text-align: left;
+                    padding: 5%;
+                }
+
+                .footer .row1 ul li {
+                    display: block;
+                    margin: 10px 0px;
+                    text-align: left;
+                }
+
+                .footer .row1 a i {
+                    margin: 0% 3%;
+                }
+            }
+
+        </style>
+    </body>
+
+</html>
