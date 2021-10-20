@@ -96,3 +96,16 @@ a:hover{
   text-decoration: none;
   color: red;
 }
+@media (max-width: 450px) {
+  #contactbtn{
+    display: none;
+  }
+  .menu  li {
+    margin-left: 40px;
+   padding: 0;
+  }
+  .menu{
+    margin-top: 5px;
+    
+  }
+  }

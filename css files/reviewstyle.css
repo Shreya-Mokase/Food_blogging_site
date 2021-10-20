@@ -7,7 +7,7 @@ body {
   background-color: #f3f3f3;
   font-family: "Poppins", sans-serif;
 }
-.menu {
+.menu1 {
   padding: 0 10px 30px 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax (350px, lfr));
@@ -84,4 +84,18 @@ h1 {
 a:hover{
   text-decoration: none;
   color: red;
+}
+
+@media (max-width: 450px) {
+#contactbtn{
+  display: none;
+}
+.menu  li {
+  margin-left: 40px;
+ padding: 0;
+}
+.menu{
+  margin-top: 5px;
+  
+}
 }

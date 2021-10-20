@@ -173,3 +173,16 @@ a:hover{
     padding-top: 50px;
   }
 }
+@media (max-width: 450px) {
+  #contactbtn{
+    display: none;
+  }
+  .menu  li {
+    margin-left: 40px;
+   padding: 0;
+  }
+  .menu{
+    margin-top: 5px;
+    
+  }
+  }
